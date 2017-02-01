@@ -2,7 +2,7 @@
   "name": "liftOff",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://github.com/ashutoshjha1409/liftOffAssignment.git",
+  "homepage": "https://github.com/ashutoshjha1409/liftOffAssignments.git",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "react-scripts": "0.8.5"
