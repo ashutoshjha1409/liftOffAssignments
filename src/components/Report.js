@@ -31,7 +31,7 @@ export default class Reports extends React.Component{
 		let reports = JSON.parse(this.state.reports);
 		return reports.map((el, i) => {
 			return (
-				<Cell col={4} key={`${el.name}-${el.value}-${i}`} >
+				<Cell col={6} key={`${el.name}-${el.value}-${i}`} >
 					<Card>
 						<CardHeader
 					      title={el.name}
