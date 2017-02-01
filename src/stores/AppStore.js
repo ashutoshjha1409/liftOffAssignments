@@ -8,8 +8,8 @@ class AppStores extends EventEmitter{
 	}
 
 	_updatePlans(newObj){
-		let plans = this._getAllPlans();
-		plans = JSON.parse(plans)
+		let plans = JSON.parse(localStorage.getItem('plans') || '[]');
+
 		plans.push(newObj);
 		localStorage.setItem('plans', JSON.stringify(plans));
 		
@@ -17,7 +17,7 @@ class AppStores extends EventEmitter{
 	}
 
 	_getAllPlans(){
-		return localStorage.getItem('plans', this.plans);
+		return JSON.parse(localStorage.getItem('plans'));
 	}
 
 	_handleActions(action){

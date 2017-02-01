@@ -99,7 +99,7 @@ export default class PlanDetails extends React.Component{
 	}
 
 	render(){
-		let {name, value, valueErr, startDate, endDate} = this.state;
+		let {name, value, valueErr, nameErr, startDate, endDate} = this.state;
 		
 		return (
 			<div style={{padding: 20, width: '50%', margin: '0 auto'}}>
@@ -109,6 +109,7 @@ export default class PlanDetails extends React.Component{
 						  value={name}
 					      hintText="Enter a Name"
 					      floatingLabelText="Name"
+					      errorText={nameErr}
 					      onChange={this._handleFieldChange.bind(this, "name")}
 					    />
 					</Cell>
