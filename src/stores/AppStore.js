@@ -23,7 +23,6 @@ class AppStores extends EventEmitter{
 	_handleActions(action){
 		switch(action.type){
 			case 'UPDATE_PLANS' : {
-				console.log("count call")
 				this._updatePlans(action.plan);
 				break;
 			}
